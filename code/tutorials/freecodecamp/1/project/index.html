@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="my first survey form ">
+    <meta name="author" content="name">
+    <title>title</title>
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="center">My Fisrt Survey Form</h1>
+      <p id="description" class="center">a quick survey on yourr life as a coder</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <section id="contact-info">
+          <h2 id="contant-info-title" class="header-size center">Contact Info Here:</h2>
+          <p class="center">(required)</p>
+          <label id="name-label" for="name">Name:</label><input id="name" name="name" type="text" placeholder="john doe"  required>
+          <label id="email-label" for="email">Email Here:</label><input id="email" name="email" type="email" placeholder="johndoe@email.com"required>
+          <label id="number-label" for="number">Age Here:</label><input id="number" name="age"  type="number" min="18" max="120" placeholder="18"required>
+        </section>
+        <hr>
+        <section id="selection-box">
+          <h2 id="selection-box-title" class="header-size center">Where did you start?</h2>
+          <p class="center">(required)</p>
+          <select id="dropdown" name="dropdown" class="center" required>
+            <option value="">(choose one)</option>
+            <option value="1">Python</option>
+            <option value="2">Html/CSS/Javascript</option>
+            <option value="3">PHP</option>
+            <option value="4">Other</option>
+          </select>
+        </section>
+        <hr>
+        <section id="question-one">
+          <h2 id="question-one-title" class="center">Are you liking my survey?</h2>
+          <p class="center">(required)</p>
+          <label id="radio-label-one" for="radio-button1">Yes</label><input id="radio-button1" value="radio-buttons" name="radios" type="radio">
+          <label id="radio-label-two" for="radio-button2">No</label><input id="radio-button2" value="radio-buttons" name="radios" type="radio" required>
+        </section>
+        <hr>
+        <section id="question-two">
+          <h2 id="question-two-title" class="center">Whats Your Prefered Language?</h2>
+          <p class="center">(optional)</p>
+          <label id="lang-label" for="languages0">Html</label><input id="languages0" value="languages" name="choices" type="checkbox">
+          <label id="lang-label1" for="languages1">Python</label><input id="languages1" value="languages" name="choices" type="checkbox">
+          <label id="lang-label2" for="languages2">PHP</label><input id="languages2" value="languages" name="choices" type="checkbox">
+          <label id="lang-label3" for="languages3">Other</label><input id="languages3" value="languages" name="choices" type="checkbox">
+        </section>
+        <hr>
+        <section>
+          <h2 id="comments-title" class="center">Comments</h2>
+          <p class="center">(optional)</p>
+          <textarea id="comments"></textarea>
+        </section>
+        <label for="submit" id="submit-label"></label><input id="submit" type="submit" name="submit">
+      </form>
+    </main>
+    <hr>
+    <footer>
+      <p>My name is Joseph k. Fousek and I made this page. If your willing to leave me some feedback please contact me at +1 (443)-717-4258, or at jkfousek@gmail.com. Thanks for taking part in my first survey!</p>
+    </footer>
+  </body>
+</html>

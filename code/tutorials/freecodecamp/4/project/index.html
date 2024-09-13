@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <div id="top-bar">
+        <header>
+          <h1 id="title1">company title</h1>
+        </header>
+        <img id="icon" src="icons8-settings-glyph-neue-16.png" alt="icon">
+        <nav>
+          <button class="top" onclick="location.href='#products'">products</button>
+          <button class="top" onclick="location.href='#pricing'">checkout</button>
+          <button class="top" onclick="location.href='#why_us'">why us?</button>
+        </nav>
+      </div>
+      <div id="page-title">
+        <header>
+          <h2 id="title">title of webpage</h2>
+        </header> 
+      </div>
+      <div id="why_us">
+        <header>
+          <h2>Guarentee</h2>
+        </header>
+        <p>100% satisfaction or your money back.</p>
+        <header>
+         <h2>shipping</h2>
+        </header>
+        <p>Shipping and return shipping is free!</p>
+        <header>
+          <h2>deals</h2>
+        </header>
+        <p>Year round deals that go unmatched!</p>
+      </div>
+      <div id="products">
+        <header>
+          <h2>our products</h2>
+        </header>
+        <p class="description">our products description</p>
+        <div class="flex">
+          <div id="product-one">
+            <header>
+              <h3>product one</h3>
+            </header>
+            <div id="product-info">
+              <p class="description">description of product</p>
+              <p id="pricing">$50.00</p>
+              <button class="checkout" onclick="location.href='#checkout'">checkout</button>
+            </div>
+          </div>
+          <div id="product-two">
+            <header>
+              <h3>product two</h3>
+            </header>
+            <div id="product-info">
+              <p class="description">description of product</p>
+              <p id="pricing">$50.00</p>
+              <button class="checkout" onclick="location.href='#checkout'">checkout</button>
+            </div>
+          </div>
+          <div id="product-three">
+            <header>
+              <h3>product three</h3>
+            </header>
+            <div id="product-info">
+              <p class="description">description of product</p>
+              <p id="pricing">$50.00</p>
+            </div>
+            <button class="checkout" onclick="location.href='#checkout'">checkout</button>
+          </div>
+        </div>  
+      </div>
+      <div id="checkout">
+        <header>
+          <h2>billing information</h2>
+        </header>
+        <form method="post">
+          <div class="label">
+            <label class="info">credit card details:</label>
+          </div>
+          <input type="number" name="cc-number" placeholder="###-###-####" max="9999999999" min="0000000000">
+          <div id="date-ccv" class="flex2">
+            <input type="date" id="date-exp" name="cc-exp" placeholder="experation date">
+            <input type="number"
+            id="ccv" name="ccv" placeholder="ccv" max="999">
+          </div>
+          <div class="label">
+            <label class="info">address:</label>
+          </div>
+            <input type="address" name="address" placeholder="home address">
+          <input type="address" name="address" placeholder="billing address">
+          <div class="label">
+            <label class="info">contact info:</label>
+          </div>
+          <input type="text" id="name" name="name" placeholder="John Doe" class="submit1" required>
+          <input type="email" id="email" name="email" placeholder="Enter email address here" class="submit1" required>
+          <button id="buy" 
+          type="submit">submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>copyright<br>tos<br>contact email</p>
+    </footer>
+  </body>
+</html>

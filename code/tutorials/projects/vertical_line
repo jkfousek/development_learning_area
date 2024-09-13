@@ -1,0 +1,21 @@
+<DOCTYPE html>
+   <head></head>
+<html>
+   <style>
+      body{
+         background-color: #333;
+      }
+      .vertical-line {
+        border-left: 3px solid #ccc ;
+        display: inline-block;
+        margin: 0 10px; 
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+      }
+   </style>
+   <body>
+      <span class="vertical-line"
+   </body>
+</html>

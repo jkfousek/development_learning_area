@@ -1,0 +1,47 @@
+body{
+   background-color: #333;
+}
+
+#ball {
+   border: 2px solid black;
+   background-color: #500;
+   border-radius: 50%;
+   height: 25vw;
+   width: 25vw;
+   position: absolute;
+   top:50%;
+   left: 50%;
+   animation: moveUpDown 1s ease-in-out infinite alternate;
+} 
+
+#origin {
+   height: 1vw;
+   width: 1vw;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border: 1px solid;
+   border-radius: 50%;
+}
+
+@keyframes moveUpDown {
+   0% {
+      transform: translate3d(-160px,-200px,50px);
+   }
+   25% {
+     transform: translate3d(-80px,200px,50px);
+     height: 0vw;
+   }
+   50% {
+      transform: translate3d(0px,-200px,50px);
+      height: 25vw;
+   }
+   75% {
+      transform: translate3d(80px,200px,50px);
+      height: 0vw;
+   }
+   100% {
+      transform: translate3d(160px,-200px,50px);
+      height: 25vw;
+   }
+}

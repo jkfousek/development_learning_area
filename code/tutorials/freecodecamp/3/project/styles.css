@@ -1,0 +1,128 @@
+@media screen {
+  .nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  }
+  
+  body {
+    background-color: hsl(0deg, 0%, 10%);
+    color: hsl(150deg, 0%, 75%);
+    padding-top: 170px;
+  }
+  
+  body h1 {
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+    text-decoration: underline;
+  }
+  
+  .box-border {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 365rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .box-padding {
+    border: 1px solid black;
+    width: 85rem;
+    height: 380rem;
+    background-color: hsl(1deg 0% 20%);
+    position: relative;
+  }
+  
+  nav {
+    max-width: 23rem;
+    width: 23rem;
+    height: auto;
+    position: fixed;
+    justify-content: left;
+    background-color: hsl(0deg, 0%, 10%);
+    border-radius: 5px;
+  }
+  nav button {
+    width: 100%;
+    height: 5.5rem;
+    margin-bottom: 20px;
+    background-color: hsl(1deg 0% 20%);
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  nav button a {
+    color: hsl(150deg, 0%, 75%);
+  }
+  
+  button:hover {
+    background-color: hsl(150deg, 0%, 35%);
+    color: hsl(1deg 0% 20%);
+  }
+  
+  .text-indent {
+    text-indent: 30px;
+  }
+  
+  h2, h3, nav button a {
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
+  
+  p, li{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  code {
+    background-color: hsl(1deg 0% 20%);
+  }
+  
+  .sections {
+    background-color: hsl(1deg 0% 30%);
+    position: absolute;
+    width: 66%;
+    font-size: 1rem;
+    right: 0;
+    border: 1px solid black;
+    justify-content: right;
+    align-items: center;
+  }
+  .section-one {
+    top: 0;
+  }
+  
+  .section-two {
+    top: 50rem;
+  }
+  
+  .section-three {
+    top:72rem;
+  }
+  
+  .section-four {
+    top: 119rem;
+  }
+  
+  .section-five {
+    top: 158rem;
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }

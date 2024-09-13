@@ -1,0 +1,65 @@
+body {
+  background-color: hsl(180deg 20% 15%);
+  color: hsl(210deg 50% 80%);
+  padding: 50px;
+}
+
+.center,
+section {
+  text-align: center;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  display: inline-block;
+  width: 100%;
+}
+
+#name,
+#email,
+#dropdown {
+  width: 250px;
+  height: 30px;
+}
+
+#dropdown,
+#name,
+#email,
+#number,
+#comments {
+  color: hsl(180deg 20% 15%);
+  background-color: hsl(210deg 50% 80%);
+  font-size: 20px;
+}
+
+#languages0,
+#languages2,
+#languages1,
+#languages3,
+#radio-button1,
+#radio-button2 {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+textarea {
+  width: 360px;
+  height: 180px;
+}
+
+#submit {
+  display: block;
+  width: 150px;
+  height: 30px;
+  margin: 10px auto;
+  font-size: 25px;
+  background-color: hsl(210deg 50% 80%);
+  color: hsl(180deg 20% 15%);
+}
+
+#submit:hover {
+  color: hsl(210deg 50% 80%);
+  background-color: hsl(180deg 20% 15%);
+}

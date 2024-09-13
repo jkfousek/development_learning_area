@@ -1,0 +1,36 @@
+body{
+   background-color: #333;
+}
+
+#ball {
+   border: 2px solid black;
+   background-color: #500;
+   border-radius: 50%;
+   height: 25vw;
+   width: 25vw;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   animation: moveUpDown 2s ease-in-out infinite alternate;
+} 
+
+#origin {
+   height: 1vw;
+   width: 1vw;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border: 1px solid;
+   border-radius: 50%;
+}
+
+@keyframes moveUpDown {
+
+  50% {
+    transform: translateY(40vw);
+    height: 0vw;
+  }
+  100%, 0% {
+   transform: translateY(-15vw);
+  }
+}

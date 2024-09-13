@@ -1,0 +1,154 @@
+h2, h1, h3 {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #333;
+  color: #c9c9c9;
+}
+
+#top-bar {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  position: relative;
+  background-color: hsl(180deg 30% 20%);
+  height: 50px;
+  align-items: center;
+  padding: .2rem;
+}
+
+#title1 {
+  padding-left: .2rem
+}
+
+#top-bar nav{
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.top {
+  width: 5rem;
+  height: 1.6rem;
+  background-color: #333;
+  color: white
+}
+
+#icon {
+  margin-left: 15rem;
+  margin-top: 1rem;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+#top-bar header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#title {
+  text-align: center;
+}
+
+#page-title {
+  padding: 10px;
+}
+
+input {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#why_us {
+
+  width: 17rem;
+  margin: auto
+}
+
+#why_us h2 {
+  text-align: left;
+  padding-right: 5rem;
+}
+
+#why_us p {
+  margin-top: -1rem;
+  text-align: center;
+}
+
+#products h2, #products h3, p {
+  text-align: center;
+}
+
+.checkout {
+  display: block;
+  margin: auto;
+}
+
+#product-one, #product-two, #product-three {
+  border: 1px solid black;
+  padding: .2rem;
+  border-radius: .5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#checkout {
+  border: 1px solid black;
+  width: 17rem;
+  margin: auto;
+  padding: 10px;
+  margin-top: 1rem;
+}
+
+#checkout h2 {
+  text-align: center;
+}
+
+#buy {
+  display: block;
+  margin-left: auto;
+  margin-top: 5px;
+}
+.flex2 {
+  display: flex;
+}
+
+#ccv {
+  width: 50px;
+  margin-left: -40px
+}
+
+.label {
+  display: block;
+  text-align: left;
+  width: 12rem;
+  margin: auto;
+  margin-top: .5rem;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+button {
+  background-color: #333;
+  color: #c9c9c9;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+button:hover {
+  background-color: #c9c9c9;
+  color: #333;
+}
+
+footer {
+  background-color:  hsl(180deg 30% 20%);
+}
