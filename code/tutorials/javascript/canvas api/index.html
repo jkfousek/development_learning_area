@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Canvas API</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <canvas id="canvas"></canvas>
+      <script>
+         /* reference's an element by id */
+         const canvas = document.getElementById("canvas");
+         /* this method defines how your id(canvas) is rendered */
+         const ctx = canvas.getContext("2d");
+
+         /* fillstyle property sets your context's color */
+         ctx.fillStyle = "green";
+         /* set position with the y,x axis and the dementions with the next set of values */
+         ctx.fillRect(10,10,150,100);
+
+         
+      </script>
+   </body>
+</html>

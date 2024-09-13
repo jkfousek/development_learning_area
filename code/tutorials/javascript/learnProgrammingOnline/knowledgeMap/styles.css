@@ -1,0 +1,96 @@
+body {
+   background-color: #333;
+   color: #c9c9c9;
+   width: 100vw;
+   height: 100vw;
+   max-height: 120vw;
+   min-height: 120vw;
+   max-width: 100vw;
+   min-width: 100vw;
+}
+
+.line {
+   width: 40vw;
+   border: 1px solid #000;
+   position: absolute;
+}
+
+.line:nth-of-type(1) {
+   rotate: 115deg;
+   top: 48%;
+   left: 7.3%;
+   width: 46.5vw;
+}
+.line:nth-of-type(2) {
+   rotate: 123deg;
+   top: 60%;
+   left: 12.5%;
+   width: 36vw;
+}
+.line:nth-of-type(3) {
+   rotate: 136deg;
+   top: 70.5%;
+   left: 17.3%;
+   width: 27vw;
+}
+.line:nth-of-type(4) {
+   rotate: 160deg;
+   top: 82%;
+   left: 20%;
+   width: 21vw;
+}
+.line:nth-of-type(5) {
+   rotate: 22deg;
+   top: 96%;
+   left: 20%;
+   width: 21vw;
+}
+.line:nth-of-type(6) {
+   rotate: 45deg;
+   top: 107%;
+   left: 17%;
+   width: 27.5vw;
+}
+.line:nth-of-type(7) {
+   rotate: 57deg;
+   top: 116%;
+   left: 12.5%;
+   width: 36vw;
+}
+.line:nth-of-type(8) {
+   rotate: 65deg;
+   top: 127.2%;
+   left: 6.6%;
+   width: 47.5vw;
+}
+
+#out {
+   border: 1px solid black;
+   width: 100%;
+   height: 100%;
+}
+
+div:not(#out, #img, #lines) {
+   margin-top: 1px;
+   padding: 1vw;
+   display: block;
+   border: 1px solid black;
+   height: 11vw;   
+   width: 11vw;
+   margin: auto;
+   margin-left: 40%;
+   border-radius: 50%;
+   text-align: center;
+}
+
+#img {
+   margin-left: 15%;
+}
+#img img {
+   width: 5vw;
+   height: 5vw;
+}
+
+a {
+   display: block;
+}
