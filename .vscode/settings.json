@@ -1,0 +1,52 @@
+{
+  "editor.fontFamily": "Fira code",
+  "editor.fontWeight": "900",
+  "editor.fontSize": 15,
+  "editor.colorDecorators": true,
+  "editor.fontLigatures": true,
+  "editor.inlayHints.enabled": "off",
+  "workbench.colorCustomizations": {
+    "editor.selectionHighlightBorder": "#ffffff",
+    "editor.selectionBackground": "#333",
+    "editor.lineHighlightBackground": "#22262c",
+    "editor.lineHighlightBorder": "#469",
+    "editor.background": "#33333300",
+    "editorGroup.border": "#469f",
+    "editor.hoverHighlightBackground": "#33333399",
+    "editor.foreground": "#469",
+    "editor.wordHighlightBackground": "#33333333"
+  },
+  "editor.wordWrap": "on",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "workbench.iconTheme": "fira-code-material-icon-theme",
+  "editor.tabSize": 3,
+  "files.autoSave": "afterDelay",
+  "editor.autoIndent": "advanced",
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Abyss",
+  "editor.tokenColorCustomizations": {
+    "keywords": "#60acee99",
+    "strings": "#60acee99",
+    "comments": "#33993399",
+    "types": "#60acee99",
+    "numbers": "#5bc1f0",
+    "functions": "#701b6cfb",
+    "variables": "#4690ff",
+    "textMateRules": [
+      {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#859ca7",
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  "conventionalCommits.lineBreak": "\\n",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "git.openRepositoryInParentFolders": "never"
+}
