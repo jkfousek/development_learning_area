@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>hello</title>
+      <link rel="icon" href="data:;base64,iVBORwOKGO=" /> //favico fix
+   </head>
+   <body>
+      <script>
+         class User {
+          constructor(firstName, lastName, age) {
+              this.firstName = firstName;
+              this.lastName = lastName;
+              this.age = age;
+          }
+          getFullName() {
+              return `${this.firstName} ${this.lastName}`
+          }
+          getInitials() {
+              return `${this.firstName[0]}${this.lastName[0]}`
+          }
+          canVote() {
+              if (this.age >= 18) {
+                  return true
+              }
+              return false
+          }
+          }
+          let sam = new User("Sam", "Blue", 49);
+          console.log(sam.firstName + " " +sam.lastName);
+      </script>
+   </body>
+</html>

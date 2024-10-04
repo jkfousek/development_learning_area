@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>num ges game</title>
+      <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+      <style>
+         body {
+            background-color: #333;
+            font-size: 2rem;
+            font-weight: 900;
+         }
+         #one-to-10 {
+            background-color: #666;
+            border-color: #333;
+         }
+         input {
+            font-weight: 900;
+            width: 5rem;
+            height: 1.5rem;
+         }
+         #button {
+            width: 5rem;
+            height: 2rem;
+            font-size: 1rem;
+         }
+      </style>
+   </head>
+   <body id="body">
+      <section>
+         <header>
+            <h1>number guessing game</h1>
+         </header>
+         <p>guess a number from 1 to 100 then press submit (you have 3 guesses)</p>
+         <div class="form">
+            <label for="guessField">enter number here:</label>
+            <input type="number" placeholder="1-100" max="100" min="1" class="guessField" id="guessField">
+            <input type="submit" value="Enter" id="button" class="guessSubmit">
+         </div>
+      </section>
+      <section>
+         <div id="blank"> </div>
+      </section>
+      <script>
+         let guessCount = 1;
+         let randomNumber = Math.floor(Math.random()*10) + 1;
+         const guessField = document.querySelector(".guessField")
+         const guessSubmit = document.querySelector(".guessSubmit")
+         guessSubmit.addEventListener("click", checkGuess)
+         function checkGuess() {
+           const userGuess = Number(guessField.value);
+           if (userGuess === randomNumber) {
+              blank.style.backgroundColor = 'green';
+              blank.style.width = "200px";
+              blank.style.margin = "10px";
+              blank.style.textAlign = "center";
+              blank.textContent = "You Win!";
+              endGame()
+           } else {
+              blank.style.backgroundColor = 'red';
+              blank.style.width = "200px";
+              blank.style.margin = "10px";
+              blank.style.textAlign = "center";
+              blank.textContent = "try again!";
+           }
+
+           if (guessCount === 10) {
+              blank.textContent ="You lose!"
+              endGame()
+           }
+           guessCount++;
+         }
+         function resetGame() {
+            guessField.value="";
+            window.location.reload();
+         }
+         function endGame() {
+            guessField.disabled = true;
+            guessSubmit.disabled = true;
+            endGameButton = document.createElement("button");
+            document.body.append(endGameButton);
+            endGameButton.textContent = "End Game";
+            endGameButton.addEventListener("click", resetGame);
+            endGameButton.style.width = "5rem";
+            endGameButton.style.height = "2.5rem";
+            endGameButton.style.fontSize = "1rem";
+            endGameButton.style.fontWeight = "900"
+         }
+      </script>
+   </body>
+</html>
